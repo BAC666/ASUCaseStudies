@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pacific Trails Resort :: Activities</title>
+<link href="pacific.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper" class="bootstrap-topnav">
+ <header>
+    <h1><a href="index.html">Pacific Trails Resort</a></h1>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-light" role="navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Pacific Trails</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ptNav" aria-controls="ptNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="ptNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="yurts.html">Yurts</a></li>
+        <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="trailhero" class="hero">
+  </div>
+  <main class="container my-4">
+  <h2>Activities at Pacific Trails</h2>
+  <div class="flow">
+    <section>
+    <h3>Hiking</h3>
+    <p>Pacific Trails Resort has 5 miles of hiking
+trails and is adjacent to a state park. Go it
+alone or join one of our guided hikes.</p>
+    </section>
+	<section>
+      <h3>Kayaking</h3>
+      <p>Ocean kayaks are available for guest use.</p>
+    </section>
+	<section>
+      <h3>Bird Watching</h3>
+      <p>While anytime is a good time for bird watching
+at Pacific Trails, we offer guided birdwatching
+trips at sunrise several times a
+week.</p>
+    </section>
+  </div>
+  <div class="mt-3">
+  <label for="activityFilter" class="form-label">Filter activities</label>
+  <select id="activityFilter" class="form-select form-select-sm">
+    <option value="all">All</option>
+    <option value="hiking">Hiking</option>
+    <option value="kayaking">Kayaking</option>
+    <option value="tour">Guided Tour</option>
+  </select>
+
+  <ul class="mt-3">
+    <li class="activity-item" data-category="hiking">Forest hike</li>
+    <li class="activity-item" data-category="kayaking">Ocean kayaking</li>
+    <li class="activity-item" data-category="tour">Nature photography tour</li>
+  </ul>
+</div>
+</main>
+  <footer>
+Copyright &copy; 2022 Pacific Trails Resort<br>
+  <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
